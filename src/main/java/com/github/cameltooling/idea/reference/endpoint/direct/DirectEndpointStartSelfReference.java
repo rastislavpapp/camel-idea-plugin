@@ -52,6 +52,7 @@ public class DirectEndpointStartSelfReference extends PsiReferenceBase<PsiElemen
         return resolvedElement;
     }
 
+    @Override
     public PsiElement handleElementRename(@NotNull String newElementName) throws IncorrectOperationException {
         ElementManipulator<PsiElement> manipulator = ElementManipulators.getManipulator(myElement);
         return manipulator.handleContentChange(myElement, endpoint.getNameTextRange().shiftRight(getStartOffset(myElement)), newElementName);

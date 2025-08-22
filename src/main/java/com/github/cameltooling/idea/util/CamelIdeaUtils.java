@@ -55,6 +55,7 @@ public final class CamelIdeaUtils implements Disposable {
     public static final String PROPERTY_PLACEHOLDER_START_TAG = "{{";
     public static final String PROPERTY_PLACEHOLDER_END_TAG = "}}";
     public static final Pattern PROPERTY_PLACEHOLDER_PATTERN = Pattern.compile("\\{\\{([^}]*)}}");
+    public static final String PROCESSOR_DEFINITION = "org.apache.camel.model.ProcessorDefinition";
 
     private final List<CamelIdeaUtilsExtension> enabledExtensions;
 

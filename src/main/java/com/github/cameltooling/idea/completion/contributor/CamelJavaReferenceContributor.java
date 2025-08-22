@@ -67,7 +67,7 @@ public class CamelJavaReferenceContributor extends CamelContributor {
                 PsiJavaPatterns.psiExpression().methodCallParameter(
                     0,
                     PsiJavaPatterns.psiMethod()
-                        .definedInClass("org.apache.camel.model.ProcessorDefinition")
+                        .definedInClass(CamelIdeaUtils.PROCESSOR_DEFINITION)
                         .withName("setHeader")
                 )
             ),
@@ -80,7 +80,7 @@ public class CamelJavaReferenceContributor extends CamelContributor {
                 PsiJavaPatterns.psiExpression().methodCallParameter(
                     1,
                     PsiJavaPatterns.psiMethod()
-                        .definedInClass("org.apache.camel.model.ProcessorDefinition")
+                        .definedInClass(CamelIdeaUtils.PROCESSOR_DEFINITION)
                         .withName("setHeader")
                 )
             ),
